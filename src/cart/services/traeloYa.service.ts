@@ -29,7 +29,7 @@ export class TraeloYaTariffProvider implements TariffProvider {
             'X-Api-Key': this.configService.get<string>('TRAELO_YA_API_KEY'),
           },
           httpsAgent: new https.Agent({  
-            rejectUnauthorized: false // Esto desactiva la verificación del certificado
+            rejectUnauthorized: false
           })
         })
       );
