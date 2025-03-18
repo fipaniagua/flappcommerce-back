@@ -1,55 +1,54 @@
-# API de Envíos
+# Shipping API
 
-Este repositorio contiene una API para cotizar envíos utilizando dos proveedores ficticios: TraeloYa y Uder. La API está construida con NestJS y permite obtener, comparar y seleccionar la mejor tarifa de envío disponible.
+This repository contains an API for getting shipping quotes from two fictional providers: TraeloYa and Uder. The API is built with NestJS and allows you to get, compare, and select the best available shipping rate.
 
-## Características
+## Features
 
-- Cotización de envíos con múltiples proveedores
-- Selección automática de la tarifa más económica
-- Validación de datos de entrada
-- Estructura modular y extensible
+- Shipping quotes from multiple providers
+- Automatic selection of the most economical rate
+- Input data validation
+- Modular and extensible structure
 
-## Configuración
+## Setup
 
-### Pre-requisitos
+### Prerequisites
 
-- Docker y Docker Compose (recomendado)
-- Node.js 16+ y npm (alternativa)
+- Docker and Docker Compose (recommended)
+- Node.js 16+ and npm (alternative)
 
-### Variables de entorno
+### Environment Variables
 
-Antes de iniciar la aplicación, debes configurar las variables de entorno necesarias:
+Before starting the application, you need to configure the necessary environment variables:
 
-1. Crea un archivo `.env` en la raíz del proyecto:
+1. Create a `.env` file in the project root:
 
 ```
-TRAELO_YA_API_KEY=tu_api_key_aqui
-UDER_API_KEY=tu_api_key_aqui
+TRAELO_YA_API_KEY=your_api_key_here
+UDER_API_KEY=your_api_key_here
 ```
 
-### Ejecución con Docker (Recomendado)
+### Running with Docker (Recommended)
 
-1. Construye y levanta el contenedor:
+1. Build and start the container:
 
 ```bash
 docker-compose up --build
 ```
 
-2. La API estará disponible en: `http://localhost:3000/api`
+2. The API will be available at: `http://localhost:3000/api`
 
-### Ejecución sin Docker
+### Running without Docker
 
-1. Instala las dependencias:
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Inicia la aplicación:
+2. Start the application:
 
 ```bash
 npm run start:dev
 ```
 
-3. La API estará disponible en: `http://localhost:3000/api`
-
+3. The API will be available at: `http://localhost:3000/api`
